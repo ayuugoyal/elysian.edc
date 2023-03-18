@@ -30,13 +30,13 @@ const trackdata1 = [
     desc: "The process of creating and shaping the mechanics, systems, and rules of a game. Games can be created for entertainment, education, exercise, or experimental purposes.",
     title: "Game Design",
     desc: "The capacity of a machine to replicate intelligent human behaviour is referred to as machine learning in the field of artificial intelligence.",
-  }
+  },
 ];
 
 const page = () => {
   const trackscard = (cd, index) => {
     return (
-      <motion.div 
+      <motion.div
         variants={fadeIn("up", "tween", 0.2, 1)}
         className="p-10 content-center">
         <h1 className="text-white text-2xl font-semi-bold pb-2 lg: text-center">
@@ -129,14 +129,18 @@ const page = () => {
               design problems and challenges in the design industry. These
               events are usually short-term, taking place over a day or two.
             </motion.p>
-            <motion.div 
-                variants={fadeIn("up", "tween", 0.2, 1)}
-                className="flex items-center justify-center pt-4">
-              <button
-                className="bg-gradient-to-r from-purple-800 to-green-500 hover:from-pink-500 hover:to-green-500 text-white font-bold py-2 px-4 rounded focus:ring transform transition hover:scale-105 duration-300 ease-in-out"
-                type="button">
-                Register Here
-              </button>
+            <motion.div
+              variants={fadeIn("up", "tween", 0.2, 1)}
+              className="flex items-center justify-center pt-4">
+              <a
+                href="https://uxhack.co/events/elysian-designathon/"
+                target={"_blank"}>
+                <button
+                  className="bg-gradient-to-r from-purple-800 to-green-500 hover:from-pink-500 hover:to-green-500 text-white font-bold py-2 px-4 rounded focus:ring transform transition hover:scale-105 duration-300 ease-in-out"
+                  type="button">
+                  Register Here
+                </button>
+              </a>
             </motion.div>
           </motion.div>
           <motion.div
@@ -172,8 +176,7 @@ const page = () => {
             textStyles="text-center"
           />
 
-          <div
-            className="flex justify-center lg:flex-row flex-col items-center">
+          <div className="flex justify-center lg:flex-row flex-col items-center">
             {trackdata1.map(trackscard)}
           </div>
         </motion.div>
