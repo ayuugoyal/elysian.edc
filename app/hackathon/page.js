@@ -483,6 +483,16 @@ const page = () => {
                 alt="wolfram"
               />
             </a>
+            <a href="http://www.cybrancee.com/" target={"_blank"}>
+              <motion.img
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.5, duration: 0.8 }}
+                className="w-[200px]"
+                src="./cybrancee_logo.png"
+                alt="wolfram"
+              />
+            </a>
             {/* <a href="https://gen.xyz/" target={"_blank"}>
               <motion.img
                 initial={{ opacity: 0, y: 20 }}
