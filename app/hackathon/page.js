@@ -448,10 +448,72 @@ const page = () => {
                 transition={{ delay: 0.5, duration: 0.8 }}
                 className="w-[200px]"
                 src="./logo_taskade_white.png"
-                alt=".xyz"
+                alt="Taskade"
+              />
+            </a>
+            <a href="https://www.axure.com/" target={"_blank"}>
+              <motion.img
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.5, duration: 0.8 }}
+                className="w-[70px]"
+                src="./Axure_icon.png"
+                alt="Axure"
+              />
+            </a>
+            <a href="http://www.echo3d.com/" target={"_blank"}>
+              <motion.img
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.5, duration: 0.8 }}
+                className="w-[200px]"
+                src="./echo3d.png"
+                alt="wolfram"
               />
             </a>
           </div>
+          {/* <div className="flex justify-center pb-[50px] lg:flex-row flex-col items-center gap-10">
+            <a href="http://www.echo3d.com/" target={"_blank"}>
+              <motion.img
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.5, duration: 0.8 }}
+                className="w-[200px]"
+                src="./echo3d.png"
+                alt="wolfram"
+              />
+            </a>
+            <a href="https://gen.xyz/" target={"_blank"}>
+              <motion.img
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.5, duration: 0.8 }}
+                className="w-[100px]"
+                src="./xyz-logo-white.png"
+                alt=".xyz"
+              />
+            </a>
+            <a href="https://www.taskade.com/" target={"_blank"}>
+              <motion.img
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.5, duration: 0.8 }}
+                className="w-[200px]"
+                src="./logo_taskade_white.png"
+                alt="Taskade"
+              />
+            </a>
+            <a href="https://www.axure.com/" target={"_blank"}>
+              <motion.img
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.5, duration: 0.8 }}
+                className="w-[70px]"
+                src="./Axure_icon.png"
+                alt="Axure"
+              />
+            </a>
+          </div> */}
         </motion.div>
         <TitleText
           title={
