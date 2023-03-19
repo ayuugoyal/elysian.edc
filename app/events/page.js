@@ -4,26 +4,6 @@ import { TitleText } from "../../components/CustomTexts";
 import CountdownTimer from "./CountdownTimer";
 
 const page = () => {
-  const upcomingEv = [
-    {
-      image1: "../event_post.png",
-      image2: "comingsoon.png",
-      title: "",
-      desc: "Description",
-    },
-    {
-      image1: "../event_post.png",
-      image2: "comingsoon.png",
-      title: "",
-      desc: "Description",
-    },
-    {
-      image1: "../event_post.png",
-      image2: "comingsoon.png",
-      title: "",
-      desc: "Description",
-    },
-  ];
   const techEvents = [
     {
       image1: "../8.png",
@@ -40,12 +20,6 @@ const page = () => {
       desc: "Description",
       gLink: "https://forms.gle/ZXRh11q4n4rnJccW8",
     },
-    // {
-    //   image1: "../AI_Event.jpg",
-    //   image2: "AI_man.png",
-    //   title: "AR/VR Event",
-    //   desc: "Description",
-    // },
   ];
   const designEvents = [
     {
@@ -98,7 +72,7 @@ const page = () => {
 
   const renderCard = (card, index) => {
     return (
-      <a href={card.gLink}>
+      <a href={card.gLink} target={"_blank"}>
         <div key={index}>
           <div class="card">
             <div class="wrapper">
@@ -114,15 +88,6 @@ const page = () => {
 
   return (
     <>
-      {/* <div className="flex flex-col items-center gap-1">
-        <div className="flex flex-col items-center gap-50">
-          <CountdownTimer />
-          <TitleText title={<>Upcoming Events</>} textStyles="text-center" />
-        </div>
-        <div className=" mt-16 flex justify-center lg:flex-row flex-col gap-5">
-          {upcomingEv.map(renderCard)}
-        </div>
-      </div> */}
       <div className="items-center ">
         <TitleText title={<>Tech Events</>} textStyles="text-center" />
         <div className=" mt-10 flex justify-center lg:flex-row flex-col gap-5">
