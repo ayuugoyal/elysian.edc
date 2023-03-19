@@ -27,7 +27,7 @@ const page = () => {
   const techEvents = [
     {
       image1: "../8.png",
-      image2: "AIsample.png",
+      image2: "ai-brain.png",
       title: "AI BLITZ",
       desc: "Description",
       gLink:
@@ -35,7 +35,7 @@ const page = () => {
     },
     {
       image1: "../7.png",
-      image2: "robotic.png",
+      image2: "arduino.png",
       title: "ARDUINO OFF-ROADING",
       desc: "Description",
       gLink: "https://forms.gle/ZXRh11q4n4rnJccW8",
