@@ -110,12 +110,12 @@ const page = () => {
           {upcomingEv.map(renderCard)}
         </div>
       </div>
-      {/* <div className="items-center ">
+      <div className="items-center ">
         <TitleText title={<>Tech Events</>} textStyles="text-center" />
         <div className=" mt-10 flex justify-center lg:flex-row flex-col gap-5">
           {techEvents.map(renderCard)}
         </div>
-      </div> */}
+      </div>
       {/* <div className=" mt-10 items-center">
         <TitleText title={<>Design Events</>} textStyles="text-center" />
         <div className=" mt-10 flex justify-center lg:flex-row flex-col gap-5">
