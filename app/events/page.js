@@ -101,7 +101,7 @@ const page = () => {
         </div>
       </div>
       <div className=" mt-10 items-center">
-        <TitleText title={<>Cultural Events</>} textStyles="text-center" />
+        <TitleText title={<>Gaming Events</>} textStyles="text-center" />
         <div className=" mt-10 flex justify-center lg:flex-row flex-col gap-5">
           {culturalEvents.map(renderCard)}
         </div>
