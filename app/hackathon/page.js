@@ -16,7 +16,8 @@ import { fadeIn, staggerContainer, textVariant2 } from "../../utils/motion";
 
 const mentorsData1 = [
   {
-    image: "/ayuuimgff.jpg",
+    image:
+      "https://pbs.twimg.com/profile_images/1637876348265070594/oA_JJJrU_400x400.jpg",
     name: "Ayush Goyal",
     post: "Full Stack Developer",
     org: "SDC USS",
@@ -468,7 +469,7 @@ const page = () => {
                 transition={{ delay: 0.5, duration: 0.8 }}
                 className="w-[200px]"
                 src="./echo3d.png"
-                alt="wolfram"
+                alt="Echo 3D"
               />
             </a>
           </div>
@@ -480,7 +481,7 @@ const page = () => {
                 transition={{ delay: 0.5, duration: 0.8 }}
                 className="w-[260px]"
                 src="./cake_logo_white.png"
-                alt="wolfram"
+                alt="Interview Cake"
               />
             </a>
             <a href="http://www.cybrancee.com/" target={"_blank"}>
@@ -490,19 +491,19 @@ const page = () => {
                 transition={{ delay: 0.5, duration: 0.8 }}
                 className="w-[200px]"
                 src="./cybrancee_logo.png"
-                alt="wolfram"
+                alt="Cybrancee"
               />
             </a>
-            {/* <a href="https://gen.xyz/" target={"_blank"}>
+            <a href="https://rosenfeldmedia.com/" target={"_blank"}>
               <motion.img
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.5, duration: 0.8 }}
-                className="w-[100px]"
-                src="./xyz-logo-white.png"
-                alt=".xyz"
+                className="w-[150px]"
+                src="./rosenfeldLogo.png"
+                alt="Rosenfeld"
               />
-            </a> */}
+            </a>
             {/* <a href="https://www.taskade.com/" target={"_blank"}>
               <motion.img
                 initial={{ opacity: 0, y: 20 }}
