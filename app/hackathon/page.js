@@ -16,8 +16,7 @@ import { fadeIn, staggerContainer, textVariant2 } from "../../utils/motion";
 
 const mentorsData1 = [
   {
-    image:
-      "https://pbs.twimg.com/profile_images/1637876348265070594/oA_JJJrU_400x400.jpg",
+    image: "/ayuuimgff.jpg",
     name: "Ayush Goyal",
     post: "Full Stack Developer",
     org: "SDC USS",
