@@ -433,7 +433,7 @@ const page = () => {
           <div className="max-w-screen-lg mx-auto pb-10">
             <img
               src="/hackEDCode.png"
-              className="mx-auto h-[360px] w-[540px] rounded-lg"
+              className="mx-auto lg:h-[360px] lg:w-[540px] sm:h-[200px] sm:w-[300px] rounded-lg"
             />
           </div>
         </motion.div>
