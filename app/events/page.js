@@ -6,7 +6,7 @@ import CountdownTimer from "./CountdownTimer";
 const page = () => {
   const techEvents = [
     {
-      image1: "../sandeep_sir.png",
+      image1: "../sandeepPost.png",
       image2: "sandeep_sir_bg.png",
       title: "Tawnhall With Sandeep Jain",
       desc: "Description",
