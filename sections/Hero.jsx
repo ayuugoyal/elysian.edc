@@ -14,12 +14,15 @@ const Hero = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0.25 }}
-        className={`${styles.innerWidth} mx-auto ${styles.flexCenter} flex-col w-screen h-screen mt-4`}>
+        className={`${styles.innerWidth} mx-auto ${styles.flexCenter} flex-col w-screen h-screen mt-4`}
+      >
         <div className="flex flex-row text-center absolute left-0 bottom-0 mb-16">
           <h2 className="cllg max-sm:hidden absolute bottom-0 left-[-50px] mb-16 text-6xl">
             GGSIPU
           </h2>
-          <h1 className="edc max-sm:hidden sm:max-md:text[100px] sm:max-md:absolute sm:max-md:right-[50px] flex text-[200px]">EDC</h1>
+          <h1 className="edc max-sm:hidden sm:max-md:text[100px] sm:max-md:absolute sm:max-md:right-[50px] flex text-[200px]">
+            EDC
+          </h1>
         </div>
         <div className="flex shrink-1 flex-col justify-center items-center text-center relative mb-64 sm:w-[250px] md:w-[300px] lg:w-[400px] xl:w-[500px] w-[150px]">
           {/* <h1 className="fest-name text-[130px]">ElySian23</h1> */}
@@ -35,6 +38,9 @@ const Hero = () => {
           className="sm:h-[350px] md:h-[450px] lg:h-[600px] xl:h-[800px] 2xl:h-3/4 h-[250px] absolute right-0"
         />
       </motion.div>
+      <div className="max-w-screen-lg mx-auto pb-10">
+        <img src="/elysianSchedule.png" className="mx-auto rounded-lg" />
+      </div>
     </section>
   );
 };
