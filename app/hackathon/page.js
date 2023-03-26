@@ -141,6 +141,33 @@ const mentorsData3 = [
   },
 ];
 
+const judgeData3 = [
+  {
+    image:
+      "https://media.licdn.com/dms/image/C5103AQEX_ggLk4DQwA/profile-displayphoto-shrink_800_800/0/1559149690362?e=1685577600&v=beta&t=_fbalKLveuOGyslz2JL5jOqQ9VQzLt4DUGopwItDmDw",
+    name: "Suraj Singhla",
+    post: "Blockchain Developer",
+    org: "Torum Technology",
+    linkedinLink: "https://www.linkedin.com/in/suraj-singla-9a4343142/",
+  },
+  {
+    image:
+      "https://media.licdn.com/dms/image/C4E03AQH16iEtmUH8_w/profile-displayphoto-shrink_400_400/0/1609414778526?e=1685577600&v=beta&t=VF8NYWEq9UDSISGB8TK7jyuHdZvSdQG7-QVmBKdEwWU",
+    name: "Gaurav Jain",
+    post: "SDE",
+    org: "Tata 1mg",
+    linkedinLink: "https://www.linkedin.com/in/gauravj22/",
+  },
+  {
+    image:
+      "https://media.licdn.com/dms/image/D4D03AQHhl9YW8Imw3Q/profile-displayphoto-shrink_400_400/0/1677438317308?e=1685577600&v=beta&t=PRmEXHSHLFrEjQq1A8q64WrulIyUqvd0ThQvcjvJCsI",
+    name: "Pranav Malik",
+    post: "SDE-2",
+    org: "Microsoft",
+    linkedinLink: "https://www.linkedin.com/in/candidatepstx-95adfsdk23/",
+  },
+];
+
 const trackdata1 = [
   {
     title: "WEB 3.0",
@@ -176,7 +203,8 @@ const page = () => {
     return (
       <motion.div
         variants={fadeIn("up", "tween", 0.2, 1)}
-        className="p-10 content-center">
+        className="p-10 content-center"
+      >
         <h1 className="text-white text-2xl font-semi-bold pb-2 lg: text-center">
           {cd.title}
         </h1>
@@ -193,7 +221,8 @@ const page = () => {
         whileInView="show"
         viewport={{ once: false, amount: 0.25 }}
         key={index}
-        className="card">
+        className="card"
+      >
         <img src={card.image} alt="Person" className="card__image" />
         <p className="card__name">{card.name}</p>
         <div className="post">{card.post}</div>
@@ -234,6 +263,35 @@ const page = () => {
     );
   };
 
+  const judgeCards = (card, index) => {
+    return (
+      <motion.div
+        variants={staggerContainer}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.25 }}
+        key={index}
+        className="card"
+      >
+        <img src={card.image} alt="Person" className="card__image" />
+        <p className="card__name">{card.name}</p>
+        <div className="post">{card.post}</div>
+        {/* <div className="grid-container"> */}
+        <div className="post">{card.org}</div>
+        {/* </div> */}
+        <ul className="social-icons">
+          <li>
+            <a href={card.linkedinLink}>
+              <i className="fa fa-linkedin">
+                <AiFillLinkedin />
+              </i>
+            </a>
+          </li>
+        </ul>
+      </motion.div>
+    );
+  };
+
   return (
     <>
       <div>
@@ -243,12 +301,14 @@ const page = () => {
             initial="hidden"
             whileInView="show"
             viewport={{ once: false, amount: 0.25 }}
-            className="flex flex-col w-full xl:w-2/5 justify-center">
+            className="flex flex-col w-full xl:w-2/5 justify-center"
+          >
             <motion.h2
               variants={textVariant2}
               initial="hidden"
               whileInView="show"
-              className="flex justify-center">
+              className="flex justify-center"
+            >
               <img src="/hackEDCodeLogo.png" className="" />
               {/* <div className="my-4 text-3xl md:text-5xl text-white opacity-75 font-bold leading-tight text-center md:text-left">
                 hack
@@ -260,7 +320,8 @@ const page = () => {
             </motion.h2>
             <motion.p
               variants={fadeIn("up", "tween", 0.2, 1)}
-              className="text-white leading-normal text-base md:text-2xl mb-8 text-center md:text-left ">
+              className="text-white leading-normal text-base md:text-2xl mb-8 text-center md:text-left "
+            >
               HackEDCode is designed to foster a professional and engaging
               environment that encourages creativity, collaboration, and
               knowledge sharing. Our focus is on developing cutting-edge
@@ -271,25 +332,30 @@ const page = () => {
             </motion.p>
             <motion.div
               variants={fadeIn("up", "tween", 0.2, 1)}
-              className="flex items-center justify-center w-full text-sm">
+              className="flex items-center justify-center w-full text-sm"
+            >
               <button
                 className="flex flex-row bg-white text-black p-4 rounded"
                 type="button"
-                onClick={() => openInNewTab("https://hackedcode.devfolio.co/")}>
+                onClick={() => openInNewTab("https://hackedcode.devfolio.co/")}
+              >
                 <svg
                   className="fill-black h-[24px] w-[24px] pr-2"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 115.46 123.46"
-                  fill="#fff">
+                  fill="#fff"
+                >
                   <path
                     d="M115.46 68a55.43 55.43 0 0 1-50.85 55.11S28.12 124 16 123a12.6 
                         12.6 0 0 1-10.09-7.5 15.85 15.85 0 0 0 5.36 1.5c4 .34 10.72.51 20.13.51 
                         13.82 0 28.84-.38 29-.38h.26a60.14 60.14 0 0 0 54.72-52.47c.05 1.05.08 
-                        2.18.08 3.34z"></path>
+                        2.18.08 3.34z"
+                  ></path>
                   <path
                     d="M110.93 55.87A55.43 55.43 0 0 1 60.08 111s-36.48.92-48.58-.12C5 110.29.15 
                         104.22 0 97.52l.2-83.84C.38 7 5.26.94 11.76.41c12.11-1 48.59.12 48.59.12a55.41 
-                    55.41 0 0 1 50.58 55.34z"></path>
+                    55.41 0 0 1 50.58 55.34z"
+                  ></path>
                 </svg>
                 Register On Devfolio
               </button>
@@ -300,7 +366,8 @@ const page = () => {
             initial="hidden"
             whileInView="show"
             viewport={{ once: false, amount: 0.25 }}
-            className="w-full xl:w-2/5 p-10 overflow-hidden">
+            className="w-full xl:w-2/5 p-10 overflow-hidden"
+          >
             <motion.img
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -316,7 +383,8 @@ const page = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.25 }}
-          className="container pl-20 pr-20 mx-auto flex justify-center flex-wrap flex-col content-center">
+          className="container pl-20 pr-20 mx-auto flex justify-center flex-wrap flex-col content-center"
+        >
           <TitleText
             title={
               <>
@@ -337,7 +405,8 @@ const page = () => {
                 <motion.div
                   variants={fadeIn("up", "tween", 0.2, 1)}
                   className="p-10 content-center lg:w-1/3"
-                  key={`our-tracks-lower-${index}`}>
+                  key={`our-tracks-lower-${index}`}
+                >
                   <h1 className="text-white text-2xl font-semi-bold pb-2 lg: text-center">
                     {cd.title}
                   </h1>
@@ -352,7 +421,8 @@ const page = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.25 }}
-          className="container pl-20 pr-20 mx-auto flex justify-center flex-wrap flex-col content-center">
+          className="container pl-20 pr-20 mx-auto flex justify-center flex-wrap flex-col content-center"
+        >
           <TitleText
             title={
               <>
@@ -528,7 +598,26 @@ const page = () => {
         <TitleText
           title={
             <>
-              <div className="text-white text-4xl font-semi-bold pb-8 lg:pb-6 text-center">
+              <div className="text-white text-4xl font-semi-bold p-8 lg:pb-6 text-center">
+                hackEDCode Judges
+              </div>
+            </>
+          }
+          textStyles="text-center"
+        />
+        <motion.div
+          variants={staggerContainer}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: false, amount: 0.25 }}
+          className=" mt-10 flex justify-center lg:flex-row flex-col items-center gap-5"
+        >
+          {judgeData3.map(judgeCards)}
+        </motion.div>
+        <TitleText
+          title={
+            <>
+              <div className="text-white text-4xl font-semi-bold p-8 lg:pb-6 text-center">
                 hackEDCode Organizers
               </div>
             </>
@@ -540,7 +629,8 @@ const page = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.25 }}
-          className="mt-10 flex justify-center lg:flex-row flex-col items-center gap-5">
+          className="mt-10 flex justify-center lg:flex-row flex-col items-center gap-5"
+        >
           {mentorsData1.map(mentorCards)}
         </motion.div>
         <motion.div
@@ -548,7 +638,8 @@ const page = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.25 }}
-          className=" mt-10 flex justify-center lg:flex-row flex-col items-center gap-5">
+          className=" mt-10 flex justify-center lg:flex-row flex-col items-center gap-5"
+        >
           {mentorsData2.map(mentorCards)}
         </motion.div>
         <motion.div
@@ -556,7 +647,8 @@ const page = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.25 }}
-          className=" mt-10 flex justify-center lg:flex-row flex-col items-center gap-5">
+          className=" mt-10 flex justify-center lg:flex-row flex-col items-center gap-5"
+        >
           {mentorsData3.map(mentorCards)}
         </motion.div>
       </div>
