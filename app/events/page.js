@@ -8,7 +8,7 @@ const page = () => {
     {
       image1: "../sandeepPost.png",
       image2: "sandeepBg.png",
-      title: "Tawnhall With Sandeep Jain",
+      title: "Townhall With Sandeep Jain",
       desc: "Description",
       gLink: "https://forms.gle/7BDb5M7TFwZSz4Eo9",
     },
