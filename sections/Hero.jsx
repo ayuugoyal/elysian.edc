@@ -39,7 +39,10 @@ const Hero = () => {
         />
       </motion.div>
       <div className="max-w-screen-lg mx-auto pb-10">
-        <img src="/elysianSchedule.png" className="mx-auto rounded-lg" />
+        <img
+          src="/elysianSchedule.png"
+          className="mx-auto h-[680px] w-[540px] rounded-lg"
+        />
       </div>
     </section>
   );
