@@ -10,8 +10,7 @@ const page = () => {
       image2: "sandeep_sir_bg.png",
       title: "Tawnhall With Sandeep Jain",
       desc: "Description",
-      gLink:
-        "https://docs.google.com/forms/d/e/1FAIpQLSdANUhWEbUXEzGob9dWomOHtWpMruPGyL2TSWO3C7KHpPoWuQ/viewform?usp=sf_link",
+      gLink: "https://forms.gle/7BDb5M7TFwZSz4Eo9",
     },
     {
       image1: "../8.png",
