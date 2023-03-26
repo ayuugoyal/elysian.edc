@@ -7,7 +7,7 @@ const page = () => {
   const techEvents = [
     {
       image1: "../sandeepPost.png",
-      image2: "sandeep_sir_bg.png",
+      image2: "sandeepBg.png",
       title: "Tawnhall With Sandeep Jain",
       desc: "Description",
       gLink: "https://forms.gle/7BDb5M7TFwZSz4Eo9",
