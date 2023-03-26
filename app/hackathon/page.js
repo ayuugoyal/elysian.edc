@@ -143,24 +143,21 @@ const mentorsData3 = [
 
 const judgeData3 = [
   {
-    image:
-      "/suraj-singla.jpg",
+    image: "/suraj-singla.jpg",
     name: "Suraj Singhla",
     post: "Blockchain Developer",
     org: "Torum Technology",
     linkedinLink: "https://www.linkedin.com/in/suraj-singla-9a4343142/",
   },
   {
-    image:
-      "/gaurav-jain.jpg",
+    image: "/gaurav-jain.jpg",
     name: "Gaurav Jain",
     post: "SDE",
     org: "Tata 1mg",
     linkedinLink: "https://www.linkedin.com/in/gauravj22/",
   },
   {
-    image:
-      "/pranav-malik.jpg",
+    image: "/pranav-malik.jpg",
     name: "Pranav Malik",
     post: "SDE-2",
     org: "Microsoft",
@@ -197,12 +194,6 @@ const openInNewTab = (url) => {
   const newWindow = window.open(url, "_blank", "noopener,noreferrer");
   if (newWindow) newWindow.opener = null;
 };
-
-const prizes = [
-    { place : "1st" ,  prize: "15k", }, 
-    { place : "2nd" ,  prize: "10k", }, 
-    { place : "3rd" ,  prize: "5k", }, 
-];
 
 const page = () => {
   const trackscard = (cd, index) => {
@@ -427,7 +418,7 @@ const page = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.25 }}
-          className="container pl-20 pr-20 pb-8 mx-auto flex justify-center flex-wrap flex-col content-center"
+          className="container pl-20 pr-20 mx-auto flex justify-center flex-wrap flex-col content-center"
         >
           <TitleText
             title={
@@ -439,31 +430,24 @@ const page = () => {
             }
             textStyles="text-center"
           />
-          <div className="flex justify-center lg:flex-row flex-col content-center">
-            {prizes.map((el, index) => 
-                <motion.div
-                  variants={fadeIn("up", "tween", 0.2, 1)}
-                  className="p-10 content-center lg:w-1/3"
-                  key={`our-tracks-lower-${index}`}
-                >
-                  <h1 className="text-white text-2xl font-semi-bold pb-2 lg: text-center">
-                    {el.place}
-                  </h1>
-                  <p className="text-white text-center font-bold text-5xl">{el.prize}</p>
-                </motion.div>
-                    )}
+          <div className="max-w-screen-lg mx-auto pb-10">
+            <img
+              src="/hackEDCode.png"
+              className="mx-auto h-[360px] w-[540px] rounded-lg"
+            />
           </div>
-            <motion.div
-              variants={fadeIn("up", "tween", 0.2, 1)}
-              className="flex items-center justify-center w-full text-sm"
-            >
-          <button
-              className="flex flex-row bg-white text-black p-4 rounded content-center text-center"
-              type="button"
-              onClick={() => openInNewTab("https://drive.google.com/file/d/1FnOqIqApiuNb9gk9Xqn641IOM4cdBn3u/view?usp=sharing")}
-            >Complete prizes</button>
         </motion.div>
-        </motion.div>
+        <button
+          className="flex flex-row mx-auto bg-white text-black mb-4 p-4 rounded"
+          type="button"
+          onClick={() =>
+            openInNewTab(
+              "https://drive.google.com/file/d/1FnOqIqApiuNb9gk9Xqn641IOM4cdBn3u/view?usp=sharing"
+            )
+          }
+        >
+          Complete Prizes
+        </button>
         <motion.div
           variants={staggerContainer}
           initial="hidden"
