@@ -144,7 +144,7 @@ const mentorsData3 = [
 const judgeData3 = [
   {
     image:
-      "https://media.licdn.com/dms/image/C5103AQEX_ggLk4DQwA/profile-displayphoto-shrink_800_800/0/1559149690362?e=1685577600&v=beta&t=_fbalKLveuOGyslz2JL5jOqQ9VQzLt4DUGopwItDmDw",
+      "/suraj-singla.jpg",
     name: "Suraj Singhla",
     post: "Blockchain Developer",
     org: "Torum Technology",
@@ -152,7 +152,7 @@ const judgeData3 = [
   },
   {
     image:
-      "https://media.licdn.com/dms/image/C4E03AQH16iEtmUH8_w/profile-displayphoto-shrink_400_400/0/1609414778526?e=1685577600&v=beta&t=VF8NYWEq9UDSISGB8TK7jyuHdZvSdQG7-QVmBKdEwWU",
+      "/gaurav-jain.jpg",
     name: "Gaurav Jain",
     post: "SDE",
     org: "Tata 1mg",
@@ -160,7 +160,7 @@ const judgeData3 = [
   },
   {
     image:
-      "https://media.licdn.com/dms/image/D4D03AQHhl9YW8Imw3Q/profile-displayphoto-shrink_400_400/0/1677438317308?e=1685577600&v=beta&t=PRmEXHSHLFrEjQq1A8q64WrulIyUqvd0ThQvcjvJCsI",
+      "/pranav-malik.jpg",
     name: "Pranav Malik",
     post: "SDE-2",
     org: "Microsoft",
