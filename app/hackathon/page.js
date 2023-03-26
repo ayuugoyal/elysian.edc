@@ -198,6 +198,12 @@ const openInNewTab = (url) => {
   if (newWindow) newWindow.opener = null;
 };
 
+const prizes = [
+    { place : "1st" ,  prize: "15k", }, 
+    { place : "2nd" ,  prize: "10k", }, 
+    { place : "3rd" ,  prize: "5k", }, 
+];
+
 const page = () => {
   const trackscard = (cd, index) => {
     return (
@@ -415,6 +421,48 @@ const page = () => {
               );
             })}
           </div>
+        </motion.div>
+        <motion.div
+          variants={staggerContainer}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: false, amount: 0.25 }}
+          className="container pl-20 pr-20 pb-8 mx-auto flex justify-center flex-wrap flex-col content-center"
+        >
+          <TitleText
+            title={
+              <>
+                <p className="text-white text-4xl font-semi-bold pb-8 lg:pb-6 text-center">
+                  Prizes
+                </p>
+              </>
+            }
+            textStyles="text-center"
+          />
+          <div className="flex justify-center lg:flex-row flex-col content-center">
+            {prizes.map((el, index) => 
+                <motion.div
+                  variants={fadeIn("up", "tween", 0.2, 1)}
+                  className="p-10 content-center lg:w-1/3"
+                  key={`our-tracks-lower-${index}`}
+                >
+                  <h1 className="text-white text-2xl font-semi-bold pb-2 lg: text-center">
+                    {el.place}
+                  </h1>
+                  <p className="text-white text-center font-bold text-5xl">{el.prize}</p>
+                </motion.div>
+                    )}
+          </div>
+            <motion.div
+              variants={fadeIn("up", "tween", 0.2, 1)}
+              className="flex items-center justify-center w-full text-sm"
+            >
+          <button
+              className="flex flex-row bg-white text-black p-4 rounded content-center text-center"
+              type="button"
+              onClick={() => openInNewTab("https://drive.google.com/file/d/1FnOqIqApiuNb9gk9Xqn641IOM4cdBn3u/view?usp=sharing")}
+            >Complete prizes</button>
+        </motion.div>
         </motion.div>
         <motion.div
           variants={staggerContainer}
