@@ -10,10 +10,9 @@ const About = () => (
   <section className={`${styles.paddings} relative z-10 about`}>
     <div className="gradient-01" />
 
+    {/* </motion.div> */}
 
-      {/* </motion.div> */}
-
-      {/* <div class=" rounded overflow-hidden shadow-lg">
+    {/* <div class=" rounded overflow-hidden shadow-lg">
         <div className="image">
           <img
             class="w-3/4"
@@ -45,29 +44,35 @@ const About = () => (
         </div>
       </div> */}
 
+    <motion.div
+      variants={staggerContainer}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: false, amount: 0.25 }}
+      className="w-full p-10 overflow-hidden flex flex-row max-lg:flex-col content-center"
+    >
+      <div className="lg:w-1/2 flex content-center">
+        <motion.img
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.5, duration: 0.8 }}
+          className="rounded-2xl m-auto"
+          src="/campus.jpg"
+        />
+      </div>
       <motion.div
-        variants={staggerContainer}
-        initial="hidden"
-        whileInView="show"
-        viewport={{ once: false, amount: 0.25 }}
-        className="w-full p-10 overflow-hidden flex flex-row max-lg:flex-col content-center">
-            <div className="lg:w-1/2 flex content-center">
-              <motion.img
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.5, duration: 0.8 }}
-                className = "rounded-2xl m-auto"
-                src="/campus.jpg"
-              />
-          </div>
+        variants={fadeIn("up", "tween", 0.2, 1)}
+        className="mt-[4px] lg:w-3/4 font-normal sm:text-[22px] text-[20px] text-center text-secondary-white "
+      >
         <motion.div
-          variants={fadeIn("up", "tween", 0.2, 1)}
-          className="mt-[4px] lg:w-3/4 font-normal sm:text-[22px] text-[20px] text-center text-secondary-white ">
-          <motion.div
-            variants={staggerContainer}
-            viewport={{ once: false, amount: 0.25 }}
-            className={`flex-col p-8 backdrop-grayscale rounded-2xl`}>
-            <TypingText title="About | Elysian" textStyles="text-center text-5xl" />
+          variants={staggerContainer}
+          viewport={{ once: false, amount: 0.25 }}
+          className={`flex-col p-8 backdrop-grayscale rounded-2xl`}
+        >
+          <TypingText
+            title="About | Elysian"
+            textStyles="text-center lg:text-5xl text-4xl"
+          />
           <span className="font-extrabold text-white">Elysian </span>
           The East Campus, GGSIPU is enthralled to host its first-ever annual
           Des-Tech fest (ELYSIAN'23) on 27th- 28th March 2023 at its very own
@@ -84,7 +89,10 @@ const About = () => (
           'heaven' to technology, we are all set ready with our design and
           technology fest - ELYSIAN '23.
           <span className="font-extrabold text-white"> GGSIPU's</span> 120
-          <span className="font-extrabold text-white"> affiliated colleges </span>
+          <span className="font-extrabold text-white">
+            {" "}
+            affiliated colleges{" "}
+          </span>
           are invited to mark the event and a whopping 8000+ individuals are
           anticipated to grace the event This aims to bring together students,
           mentors and leaders of academic and industry, both from the world of
